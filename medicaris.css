@@ -397,6 +397,9 @@ p  { line-height: 1.7; color: var(--text-muted); }
 }
 .footer-credit a { color: rgba(255,255,255,.5); transition: color .15s; }
 .footer-credit a:hover { color: var(--white); }
+.footer-agency { display: inline-flex; align-items: center; vertical-align: middle; margin-left: 6px; }
+.footer-agency__logo { height: 28px; width: auto; opacity: .75; transition: opacity .15s; filter: brightness(0) invert(1); }
+.footer-agency:hover .footer-agency__logo { opacity: 1; }
 
 /* ============================================================
    RESPONSIVE — Tablet

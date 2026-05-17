@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medicaris SARL — Distributeur de matériel médical et chirurgical, Casablanca</title>
+  <meta name="description" content="Medicaris SARL — Distributeur professionnel d'instruments médicaux, matériel orthopédique et dispositifs de diagnostic à Casablanca, Maroc." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="medicaris.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-mark">M</span>
+        <span class="nav__logo-text">Medicaris</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about"   data-fr="À propos"     data-en="About Us">À propos</a></li>
+        <li><a href="#products" data-fr="Nos gammes"  data-en="Our Products">Nos gammes</a></li>
+        <li><a href="#market"  data-fr="Notre marché" data-en="Our Market">Notre marché</a></li>
+        <li><a href="#contact" class="nav__cta" data-fr="Contact" data-en="Contact">Contact</a></li>
+      </ul>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-toggle__fr">
+          <svg class="lang-flag" viewBox="0 0 20 14" aria-hidden="true"><rect width="7" height="14" fill="#002395"/><rect x="7" width="6" height="14" fill="#fff"/><rect x="13" width="7" height="14" fill="#ED2939"/></svg>
+          FR
+        </span>
+        <span class="lang-toggle__sep">/</span>
+        <span class="lang-toggle__en">
+          <svg class="lang-flag" viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#012169"/><path d="M0 0l20 14M20 0L0 14" stroke="#fff" stroke-width="3"/><path d="M0 0l20 14M20 0L0 14" stroke="#C8102E" stroke-width="1.5"/><path d="M10 0v14M0 7h20" stroke="#fff" stroke-width="4"/><path d="M10 0v14M0 7h20" stroke="#C8102E" stroke-width="2.5"/></svg>
+          EN
+        </span>
+      </button>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__badge">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+        <span data-fr="Casablanca, Maroc" data-en="Casablanca, Morocco">Casablanca, Maroc</span>
+      </div>
+      <h1 class="hero__title">
+        <span data-fr="Distributeur de matériel" data-en="Medical &amp; Surgical">Distributeur de matériel</span><br>
+        <em data-fr="médical &amp; chirurgical" data-en="Equipment Distributor">médical &amp; chirurgical</em>
+      </h1>
+      <p class="hero__sub" data-fr="Instruments chirurgicaux, matériel orthopédique et dispositifs de diagnostic — pour les professionnels de santé et revendeurs au Maroc." data-en="Surgical instruments, orthopedic equipment and diagnostic devices — for healthcare professionals and retailers in Morocco.">
+        Instruments chirurgicaux, matériel orthopédique et dispositifs de diagnostic — pour les professionnels de santé et revendeurs au Maroc.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary" data-fr="Demander un devis" data-en="Request a Quote">Demander un devis</a>
+        <a href="#products" class="btn btn--outline" data-fr="Voir nos gammes" data-en="Our Products">Voir nos gammes</a>
+      </div>
+      <div class="hero__trust">
+        <div class="trust-item">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-fr="SARL enregistrée" data-en="Registered SARL">SARL enregistrée</span>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-fr="Matériel certifié CE" data-en="CE Certified Equipment">Matériel certifié CE</span>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-fr="Gros &amp; détail" data-en="Wholesale &amp; Retail">Gros &amp; détail</span>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10a7 7 0 1114 0A7 7 0 013 10zm7-3v3l2 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-fr="Réponse sous 24h" data-en="Reply within 24h">Réponse sous 24h</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__decoration" aria-hidden="true">
+      <div class="deco-circle deco-circle--1"></div>
+      <div class="deco-circle deco-circle--2"></div>
+      <div class="deco-cross deco-cross--1"></div>
+      <div class="deco-cross deco-cross--2"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label" data-fr="À propos" data-en="About Us">À propos</div>
+          <h2 data-fr="Medicaris SARL" data-en="Medicaris SARL">Medicaris SARL</h2>
+          <p data-fr="Medicaris est un distributeur professionnel d'articles médicaux et orthopédiques basé à Casablanca. Nous approvisionnons les professionnels de santé marocains — médecins, cliniques, hôpitaux et revendeurs — en instruments chirurgicaux, matériel orthopédique et dispositifs de diagnostic de qualité." data-en="Medicaris is a professional distributor of medical and orthopedic supplies based in Casablanca, Morocco. We supply Moroccan healthcare professionals — doctors, clinics, hospitals and retailers — with quality surgical instruments, orthopedic equipment and diagnostic devices.">
+            Medicaris est un distributeur professionnel d'articles médicaux et orthopédiques basé à Casablanca. Nous approvisionnons les professionnels de santé marocains — médecins, cliniques, hôpitaux et revendeurs — en instruments chirurgicaux, matériel orthopédique et dispositifs de diagnostic de qualité.
+          </p>
+          <p data-fr="Sourcing international rigoureux, stocks disponibles, livraison rapide. Nous travaillons en gros et au détail, avec des conditions adaptées aux professionnels de santé." data-en="Rigorous international sourcing, available stock, fast delivery. We operate wholesale and retail with terms adapted for healthcare professionals.">
+            Sourcing international rigoureux, stocks disponibles, livraison rapide. Nous travaillons en gros et au détail, avec des conditions adaptées aux professionnels de santé.
+          </p>
+          <div class="legal-box">
+            <div class="legal-box__title" data-fr="Informations légales" data-en="Legal Information">Informations légales</div>
+            <table class="legal-table">
+              <tr>
+                <td data-fr="Raison sociale" data-en="Company Name">Raison sociale</td>
+                <td>Medicaris SARL</td>
+              </tr>
+              <tr>
+                <td data-fr="Forme juridique" data-en="Legal Form">Forme juridique</td>
+                <td data-fr="Société à Responsabilité Limitée (SARL)" data-en="Limited Liability Company (SARL)">Société à Responsabilité Limitée (SARL)</td>
+              </tr>
+              <tr>
+                <td data-fr="Siège social" data-en="Registered Office">Siège social</td>
+                <td data-fr="Casablanca, Maroc" data-en="Casablanca, Morocco">Casablanca, Maroc</td>
+              </tr>
+              <tr>
+                <td data-fr="Secteur" data-en="Sector">Secteur</td>
+                <td data-fr="Commerce de gros et détail d'articles médicaux et orthopédiques" data-en="Wholesale and retail of medical and orthopedic articles">Commerce de gros et détail d'articles médicaux et orthopédiques</td>
+              </tr>
+              <tr>
+                <td>RC</td>
+                <td><span class="placeholder-text" data-fr="[À compléter]" data-en="[To be provided]">[À compléter]</span></td>
+              </tr>
+              <tr>
+                <td>ICE</td>
+                <td><span class="placeholder-text" data-fr="[À compléter]" data-en="[To be provided]">[À compléter]</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="stat-card">
+            <div class="stat-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="stat-card__content">
+              <div class="stat-card__num">B2B</div>
+              <div class="stat-card__label" data-fr="Professionnels de santé" data-en="Healthcare Professionals">Professionnels de santé</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="stat-card__content">
+              <div class="stat-card__num">INT</div>
+              <div class="stat-card__label" data-fr="Sourcing international" data-en="International Sourcing">Sourcing international</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="stat-card__content">
+              <div class="stat-card__num">CE</div>
+              <div class="stat-card__label" data-fr="Matériel certifié" data-en="Certified Equipment">Matériel certifié</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="stat-card__content">
+              <div class="stat-card__num">4</div>
+              <div class="stat-card__label" data-fr="Gammes de produits" data-en="Product Categories">Gammes de produits</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-header-block">
+        <div class="section-label" data-fr="Catalogue" data-en="Catalogue">Catalogue</div>
+        <h2 data-fr="Nos gammes de produits" data-en="Our Product Range">Nos gammes de produits</h2>
+        <p data-fr="Matériel médical professionnel, conforme aux normes CE, disponible en gros et au détail." data-en="Professional medical equipment, CE-compliant, available wholesale and retail.">
+          Matériel médical professionnel, conforme aux normes CE, disponible en gros et au détail.
+        </p>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-card__icon product-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 12h8M12 8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-fr="Instruments chirurgicaux" data-en="Surgical Instruments">Instruments chirurgicaux</h3>
+          <p data-fr="Bistouris, ciseaux, pinces, rétracteurs, aiguilles, fils de suture. Matériel stérile emballé sous vide, conforme aux normes CE." data-en="Scalpels, scissors, forceps, retractors, needles, sutures. Sterile vacuum-packed equipment, CE-compliant.">
+            Bistouris, ciseaux, pinces, rétracteurs, aiguilles, fils de suture. Matériel stérile emballé sous vide, conforme aux normes CE.
+          </p>
+          <a href="#contact" class="product-card__link" data-fr="Demander un devis →" data-en="Request a Quote →">Demander un devis →</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__icon product-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-fr="Matériel orthopédique" data-en="Orthopedic Equipment">Matériel orthopédique</h3>
+          <p data-fr="Cannes, déambulateurs, attelles, orthèses, fauteuils roulants, coussins anti-escarres. Pour professionnels et particuliers." data-en="Canes, walkers, splints, orthoses, wheelchairs, pressure-relief cushions. For professionals and patients.">
+            Cannes, déambulateurs, attelles, orthèses, fauteuils roulants, coussins anti-escarres. Pour professionnels et particuliers.
+          </p>
+          <a href="#contact" class="product-card__link" data-fr="Demander un devis →" data-en="Request a Quote →">Demander un devis →</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__icon product-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-fr="Dispositifs de diagnostic" data-en="Diagnostic Devices">Dispositifs de diagnostic</h3>
+          <p data-fr="Tensiomètres, stéthoscopes, oxymètres de pouls, thermomètres, glucomètres, ophtalmoscopes. Matériel de cabinet et d'urgence." data-en="Blood pressure monitors, stethoscopes, pulse oximeters, thermometers, glucometers, ophthalmoscopes. Office and emergency equipment.">
+            Tensiomètres, stéthoscopes, oxymètres de pouls, thermomètres, glucomètres, ophtalmoscopes. Matériel de cabinet et d'urgence.
+          </p>
+          <a href="#contact" class="product-card__link" data-fr="Demander un devis →" data-en="Request a Quote →">Demander un devis →</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__icon product-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-fr="Consommables médicaux" data-en="Medical Consumables">Consommables médicaux</h3>
+          <p data-fr="Gants, masques, seringues, perfusions, pansements, compresses, désinfectants. Vente en cartons, disponibilité régulière." data-en="Gloves, masks, syringes, drips, dressings, gauze, disinfectants. Sold by the box, regular availability.">
+            Gants, masques, seringues, perfusions, pansements, compresses, désinfectants. Vente en cartons, disponibilité régulière.
+          </p>
+          <a href="#contact" class="product-card__link" data-fr="Demander un devis →" data-en="Request a Quote →">Demander un devis →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR MARKET -->
+  <section class="section section--alt" id="market">
+    <div class="container">
+      <div class="market-grid">
+        <div class="market-text">
+          <div class="section-label" data-fr="Notre marché" data-en="Our Market">Notre marché</div>
+          <h2 data-fr="Qui nous approvisionnons" data-en="Who We Serve">Qui nous approvisionnons</h2>
+          <p data-fr="Medicaris distribue du matériel médical à l'ensemble des acteurs du système de santé marocain, à Casablanca et dans les autres régions du Maroc." data-en="Medicaris distributes medical equipment to all stakeholders in the Moroccan healthcare system, in Casablanca and across Morocco.">
+            Medicaris distribue du matériel médical à l'ensemble des acteurs du système de santé marocain, à Casablanca et dans les autres régions du Maroc.
+          </p>
+          <ul class="market-list">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span data-fr="Médecins généralistes et spécialistes" data-en="General practitioners and specialists">Médecins généralistes et spécialistes</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span data-fr="Cliniques privées et cabinets médicaux" data-en="Private clinics and medical practices">Cliniques privées et cabinets médicaux</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span data-fr="Hôpitaux publics et centres de santé" data-en="Public hospitals and health centers">Hôpitaux publics et centres de santé</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span data-fr="Pharmacies et revendeurs médicaux" data-en="Pharmacies and medical retailers">Pharmacies et revendeurs médicaux</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span data-fr="Kinésithérapeutes et praticiens" data-en="Physiotherapists and practitioners">Kinésithérapeutes et praticiens</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span data-fr="Particuliers et patients" data-en="Individuals and patients">Particuliers et patients</span>
+            </li>
+          </ul>
+        </div>
+        <div class="market-card-wrap">
+          <div class="market-card">
+            <div class="market-card__flag">🇲🇦</div>
+            <h3 data-fr="Le marché de santé marocain" data-en="The Moroccan Healthcare Market">Le marché de santé marocain</h3>
+            <div class="market-stats">
+              <div class="market-stat">
+                <div class="market-stat__num">37M+</div>
+                <div class="market-stat__label" data-fr="habitants" data-en="population">habitants</div>
+              </div>
+              <div class="market-stat">
+                <div class="market-stat__num">1 500+</div>
+                <div class="market-stat__label" data-fr="cliniques privées" data-en="private clinics">cliniques privées</div>
+              </div>
+              <div class="market-stat">
+                <div class="market-stat__num">190+</div>
+                <div class="market-stat__label" data-fr="hôpitaux publics" data-en="public hospitals">hôpitaux publics</div>
+              </div>
+            </div>
+            <p class="market-card__note" data-fr="Casablanca est le centre économique du Maroc et le principal hub de distribution médicale du pays." data-en="Casablanca is Morocco's economic hub and the country's main medical distribution center.">
+              Casablanca est le centre économique du Maroc et le principal hub de distribution médicale du pays.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header-block">
+        <div class="section-label" data-fr="Contact" data-en="Contact">Contact</div>
+        <h2 data-fr="Prenons contact" data-en="Get in Touch">Prenons contact</h2>
+        <p data-fr="Pour toute demande de devis, d'information produit ou pour devenir partenaire — contactez-nous." data-en="For any quote request, product information or to become a partner — reach out.">
+          Pour toute demande de devis, d'information produit ou pour devenir partenaire — contactez-nous.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-channels">
+          <a href="mailto:contact@medicaris.ma" class="contact-channel">
+            <div class="contact-channel__icon contact-channel__icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel__label" data-fr="Email professionnel" data-en="Professional Email">Email professionnel</div>
+              <div class="contact-channel__value">contact@medicaris.ma</div>
+            </div>
+          </a>
+          <a href="https://wa.me/212600000000" class="contact-channel" target="_blank" rel="noopener noreferrer">
+            <div class="contact-channel__icon contact-channel__icon--green">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.142 1.543 5.893L.057 23.5l5.752-1.508A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.638-.51-5.145-1.395l-.369-.22-3.812 1-.978-3.716-.24-.383A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel__label">WhatsApp Business</div>
+              <div class="contact-channel__value" data-fr="+212 6XX XXX XXX · Réponse sous 24h" data-en="+212 6XX XXX XXX · Reply within 24h">+212 6XX XXX XXX · Réponse sous 24h</div>
+            </div>
+          </a>
+          <div class="contact-channel contact-channel--static">
+            <div class="contact-channel__icon contact-channel__icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel__label" data-fr="Adresse" data-en="Address">Adresse</div>
+              <div class="contact-channel__value placeholder-text" data-fr="Casablanca, Maroc — [Adresse à compléter]" data-en="Casablanca, Morocco — [Address to be completed]">Casablanca, Maroc — [Adresse à compléter]</div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="fname" data-fr="Nom / Société" data-en="Name / Company">Nom / Société</label>
+            <input type="text" id="fname" name="name" required placeholder="Dr. Ahmed Benali / Clinique Al Fath" />
+          </div>
+          <div class="form-row">
+            <label for="femail" data-fr="Email" data-en="Email">Email</label>
+            <input type="email" id="femail" name="email" required placeholder="contact@example.com" />
+          </div>
+          <div class="form-row">
+            <label for="fmessage" data-fr="Message" data-en="Message">Message</label>
+            <textarea id="fmessage" name="message" rows="4" required placeholder="Décrivez votre besoin : produit, quantité, délai souhaité..." data-fr-placeholder="Décrivez votre besoin : produit, quantité, délai souhaité..." data-en-placeholder="Describe your need: product, quantity, required delivery time..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-fr="Envoyer la demande" data-en="Send Request">Envoyer la demande</button>
+          <p class="form-note" data-fr="Réponse garantie sous 24 heures ouvrables." data-en="Reply guaranteed within 24 business hours.">Réponse garantie sous 24 heures ouvrables.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="nav__logo-mark">M</span>
+            <span class="nav__logo-text">Medicaris</span>
+          </div>
+          <p data-fr="Distributeur professionnel de matériel médical et chirurgical — Casablanca, Maroc." data-en="Professional distributor of medical and surgical equipment — Casablanca, Morocco.">
+            Distributeur professionnel de matériel médical et chirurgical — Casablanca, Maroc.
+          </p>
+        </div>
+        <div class="footer-nav">
+          <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+          <ul>
+            <li><a href="#about"    data-fr="À propos"     data-en="About Us">À propos</a></li>
+            <li><a href="#products" data-fr="Nos gammes"   data-en="Our Products">Nos gammes</a></li>
+            <li><a href="#market"   data-fr="Notre marché" data-en="Our Market">Notre marché</a></li>
+            <li><a href="#contact"  data-fr="Contact"      data-en="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+          <p><a href="mailto:contact@medicaris.ma">contact@medicaris.ma</a></p>
+          <p data-fr="Casablanca, Maroc" data-en="Casablanca, Morocco">Casablanca, Maroc</p>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>
+          © <span id="footerYear"></span> Medicaris SARL ·
+          <span data-fr="SARL · Casablanca, Maroc" data-en="LLC · Casablanca, Morocco">SARL · Casablanca, Maroc</span> ·
+          RC <span class="placeholder-text">[À compléter]</span> ·
+          ICE <span class="placeholder-text">[À compléter]</span>
+        </p>
+        <p class="footer-credit">
+          <span data-fr="Site réalisé par" data-en="Website by">Site réalisé par</span>
+          <a href="#" rel="noopener">Agence Le Panaf</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="medicaris.js"></script>
+</body>
+</html>

@@ -19,12 +19,15 @@
     html { font-size: 15px; }
     body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; -webkit-font-smoothing: antialiased; }
 
-    /* ── Print / PDF ── */
-    .no-print { }
+    /* ── Print / PDF — conservation des couleurs ── */
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
     @media print {
       .no-print { display: none !important; }
-      .page { page-break-after: always; }
-      body { font-size: 12px; }
+      body { margin: 0; padding: 0; font-size: 12px; }
+      .doc { padding: 32px 40px; }
+      .action-bar { display: none !important; }
+      .cover { page-break-after: always; }
+      .section { page-break-inside: avoid; }
     }
 
     /* ── Action bar ── */
@@ -239,7 +242,7 @@
         <div class="action-bar__sub">Agence Le Panaf · Mai 2026</div>
       </div>
     </div>
-    <button class="btn-pdf" onclick="window.print()">
+    <button class="btn-pdf" id="btnPdf">
       <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7V3h10v4M5 14H3a1 1 0 01-1-1V8a1 1 0 011-1h14a1 1 0 011 1v5a1 1 0 01-1 1h-2M5 11h10v6H5v-6z" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Exporter en PDF
     </button>
@@ -598,5 +601,11 @@
     </div>
 
   </div>
+  <script>
+    document.getElementById('btnPdf').addEventListener('click', function () {
+      alert('Dans la boîte d\'impression Chrome :\n1. Destination → "Enregistrer en PDF"\n2. "Plus de paramètres" → cocher "Graphiques d\'arrière-plan"\n3. Cliquer Enregistrer');
+      window.print();
+    });
+  </script>
 </body>
 </html>

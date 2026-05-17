@@ -1,7 +1,8 @@
 {
   "routes": [
-    { "src": "/accueil", "dest": "/index.html" },
-    { "src": "/brief",   "dest": "/brief-medicaris.html" },
-    { "src": "/",        "dest": "/login.html" }
+    { "src": "/accueil",      "dest": "/index.html" },
+    { "src": "/brief",        "dest": "/brief-medicaris.html" },
+    { "src": "/presentation", "dest": "/presentation.html" },
+    { "src": "/",             "dest": "/login.html" }
   ]
 }

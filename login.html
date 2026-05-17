@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accès — Medicaris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #13386A 0%, #1B4F8A 55%, #2563EB 100%);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #fff; border-radius: 16px;
+      padding: 48px 40px; width: 100%; max-width: 400px;
+      box-shadow: 0 24px 64px rgba(0,0,0,.2);
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 32px; justify-content: center;
+    }
+    .logo-mark {
+      width: 40px; height: 40px; background: #1B4F8A; color: #fff;
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem; font-weight: 800;
+    }
+    .logo-text { font-size: 1.125rem; font-weight: 700; color: #1A2332; }
+    h1 { font-size: 1.375rem; font-weight: 700; color: #1A2332; margin-bottom: 6px; text-align: center; }
+    .subtitle { font-size: .875rem; color: #64748B; text-align: center; margin-bottom: 32px; }
+    .form-row { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    label { font-size: .875rem; font-weight: 600; color: #1A2332; }
+    input {
+      padding: 11px 14px; border-radius: 8px;
+      border: 1.5px solid #E2E8F0;
+      font-size: .9375rem; font-family: inherit; color: #1A2332;
+      transition: border-color .15s, box-shadow .15s;
+      width: 100%;
+    }
+    input:focus { outline: none; border-color: #1B4F8A; box-shadow: 0 0 0 3px rgba(27,79,138,.12); }
+    .btn {
+      width: 100%; padding: 13px;
+      background: #1B4F8A; color: #fff;
+      border: none; border-radius: 8px;
+      font-size: .9375rem; font-weight: 600; font-family: inherit;
+      cursor: pointer; margin-top: 8px;
+      transition: background .15s, transform .1s;
+    }
+    .btn:hover { background: #13386A; }
+    .btn:active { transform: scale(.99); }
+    .error {
+      display: none; margin-top: 16px;
+      background: #FEF2F2; border: 1px solid #FECACA;
+      color: #DC2626; border-radius: 8px;
+      padding: 10px 14px; font-size: .875rem; text-align: center;
+    }
+    .error.visible { display: block; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <div class="logo-mark">M</div>
+      <span class="logo-text">Medicaris</span>
+    </div>
+    <h1>Accès réservé</h1>
+    <p class="subtitle">Connectez-vous pour accéder au site</p>
+    <form id="loginForm" novalidate>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="votre@email.com" autocomplete="email" required />
+      </div>
+      <div class="form-row">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" placeholder="••••••••" autocomplete="current-password" required />
+      </div>
+      <button type="submit" class="btn">Accéder au site</button>
+      <div class="error" id="errorMsg">Identifiants incorrects. Veuillez réessayer.</div>
+    </form>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email    = document.getElementById('email').value.trim();
+      var password = document.getElementById('password').value;
+      var error    = document.getElementById('errorMsg');
+
+      if (email === 'edhem@agencelepanaf.com' && password === 'Iamtheboss21300&') {
+        sessionStorage.setItem('med-auth', '1');
+        window.location.href = '/accueil';
+      } else {
+        error.classList.add('visible');
+      }
+    });
+
+    // Si déjà connecté, aller directement à l'accueil
+    if (sessionStorage.getItem('med-auth') === '1') {
+      window.location.href = '/accueil';
+    }
+  </script>
+</body>
+</html>

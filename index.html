@@ -399,6 +399,11 @@
     </div>
   </footer>
 
+  <script>
+    if (sessionStorage.getItem('med-auth') !== '1') {
+      window.location.replace('/');
+    }
+  </script>
   <script src="medicaris.js"></script>
 </body>
 </html>

@@ -68,7 +68,13 @@
   const yearEl = document.getElementById('footerYear');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ── Contact form (mailto fallback) ── */
+  /* ── Formulaire de contact ──
+     Tant que le nom de domaine n'est pas réservé, il n'existe pas d'email
+     professionnel valide : la demande part donc sur WhatsApp, qui est de
+     toute façon le canal réel du B2B médical au Maroc.
+     À basculer vers un envoi serveur une fois le domaine actif. */
+  const WHATSAPP_NUMBER = '212661330704';
+
   const form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', function (e) {
@@ -79,9 +85,12 @@
 
       if (!name || !email || !message) return;
 
-      const subject = encodeURIComponent('Demande de contact — Medicaris');
-      const body    = encodeURIComponent('Nom / Société : ' + name + '\nEmail : ' + email + '\n\n' + message);
-      window.location.href = 'mailto:contact@medicaris.ma?subject=' + subject + '&body=' + body;
+      const text = encodeURIComponent(
+        'Demande via le site Medicaris\n\n' +
+        'Nom / Établissement : ' + name + '\n' +
+        'Email : ' + email + '\n\n' + message
+      );
+      window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + text, '_blank', 'noopener');
     });
   }
 

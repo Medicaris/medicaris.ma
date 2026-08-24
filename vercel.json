@@ -1,9 +1,12 @@
 {
   "routes": [
-    { "src": "/accueil",      "dest": "/index.html" },
-    { "src": "/brief",        "dest": "/brief-medicaris.html" },
-    { "src": "/presentation", "dest": "/presentation.html" },
-    { "src": "/login",        "dest": "/login.html" },
-    { "src": "/",             "dest": "/index.html" }
+    { "src": "/brief(/.*)?",                     "status": 404 },
+    { "src": "/presentation(/.*)?",              "status": 404 },
+    { "src": "/login(/.*)?",                     "status": 404 },
+    { "src": "/brief-medicaris\\.(html|css|js)", "status": 404 },
+    { "src": "/presentation\\.html",             "status": 404 },
+    { "src": "/login\\.html",                    "status": 404 },
+    { "src": "/accueil",                         "dest": "/index.html" },
+    { "src": "/",                                "dest": "/index.html" }
   ]
 }

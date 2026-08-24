@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /brief
+Disallow: /presentation
+Disallow: /login
+
+Sitemap: https://medicaris.vercel.app/sitemap.xml

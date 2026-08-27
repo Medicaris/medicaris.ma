@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Radiofréquence et laser chirurgical au Maroc — Medicaris</title>
-  <meta name="description" content="Medicaris SARL, Casablanca — spécialiste de la radiofréquence et du laser en chirurgie mini-invasive au Maroc : hémorroïdes et fistule, varices par voie endoveineuse, ablation de nodule thyroïdien. Importation directe, installation, formation, consommables." />
+  <meta name="description" content="Medicaris SARL, Casablanca — spécialiste de la radiofréquence et du laser en chirurgie par énergie au Maroc : hémorroïdes et fistule, varices par voie endoveineuse, hypertrophie prostatique, ablation de nodule thyroïdien. Importation directe, installation, formation, consommables." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://medicaris.vercel.app/" />
+  <link rel="canonical" href="https://medicaris.ma/" />
   <link rel="icon" type="image/webp" href="img/logo.webp" />
   <link rel="apple-touch-icon" href="img/logo.webp" />
   <meta name="theme-color" content="#0F2A4A" />
   <meta property="og:site_name" content="Medicaris SARL" />
   <meta property="og:locale" content="fr_MA" />
   <meta property="og:title" content="Radiofréquence et laser chirurgical au Maroc — Medicaris" />
-  <meta property="og:description" content="Spécialiste de la radiofréquence et du laser en chirurgie mini-invasive : proctologie, phlébologie, ablation tissulaire. Casablanca, Maroc." />
+  <meta property="og:description" content="Spécialiste de la radiofréquence et du laser en chirurgie par énergie : proctologie, phlébologie, urologie, ablation tissulaire. Casablanca, Maroc." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://medicaris.vercel.app/" />
-  <meta property="og:image" content="https://medicaris.vercel.app/img/logo.webp" />
+  <meta property="og:url" content="https://medicaris.ma/" />
+  <meta property="og:image" content="https://medicaris.ma/img/logo.webp" />
   <meta name="twitter:card" content="summary" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,9 +28,9 @@
     "@type": "Organization",
     "name": "Medicaris SARL",
     "legalName": "MEDICARIS S.A.R.L.",
-    "url": "https://medicaris.vercel.app/",
-    "logo": "https://medicaris.vercel.app/img/logo.webp",
-    "description": "Spécialiste de la radiofréquence et du laser en chirurgie mini-invasive au Maroc. Distribution de générateurs de radiofréquence et de plateformes laser pour la proctologie, la phlébologie et l'ablation tissulaire.",
+    "url": "https://medicaris.ma/",
+    "logo": "https://medicaris.ma/img/logo.webp",
+    "description": "Spécialiste de la radiofréquence et du laser en chirurgie par énergie au Maroc. Distribution de générateurs de radiofréquence et de plateformes laser pour la proctologie, la phlébologie, l'urologie et l'ablation tissulaire.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rue Soumaya, Résidence Shehrazade 3, 5e étage, N° 22, Palmiers",
@@ -53,7 +53,7 @@
       "Traitement des hémorroïdes par radiofréquence",
       "Ablation par radiofréquence des nodules thyroïdiens",
       "Laser chirurgical proctologique",
-      "Chirurgie mini-invasive"
+      "Chirurgie par énergie"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
@@ -71,16 +71,24 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#hero" class="nav__logo">
-        <img src="img/logo.webp" alt="Medicaris SARL" style="height:44px;width:auto;" />
+        <img src="img/logo.webp" alt="Medicaris SARL" style="height:60px;width:auto;" />
       </a>
       <ul class="nav__links" id="navLinks">
         <li><a href="#domaines"   data-fr="Domaines cliniques" data-en="Clinical Fields">Domaines cliniques</a></li>
         <li><a href="#equipements" data-fr="Équipements"       data-en="Equipment">Équipements</a></li>
         <li><a href="#services"   data-fr="Nos services"       data-en="Our Services">Nos services</a></li>
+        <li class="nav__item--dropdown">
+          <button class="nav__dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-fr="Ressources" data-en="Resources">Ressources</button>
+          <ul class="nav__dropdown">
+            <li><a href="actualites.html" data-fr="Actualités" data-en="News">Actualités</a></li>
+            <li><a href="congres.html"    data-fr="Congrès"    data-en="Conferences">Congrès</a></li>
+            <li><a href="faq.html"        data-fr="FAQ"        data-en="FAQ">FAQ</a></li>
+          </ul>
+        </li>
         <li><a href="#societe"    data-fr="La société"         data-en="Company">La société</a></li>
-        <li><a href="#contact" class="nav__cta" data-fr="Demander une démo" data-en="Request a Demo">Demander une démo</a></li>
+        <li><a href="#contact" class="nav__cta" data-fr="Demander un devis" data-en="Request a Quote">Demander un devis</a></li>
       </ul>
-      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <button class="lang-toggle" id="langToggle" aria-label="Passer en anglais">
         <span class="lang-toggle__fr">
           <svg class="lang-flag" viewBox="0 0 20 14" aria-hidden="true"><rect width="7" height="14" fill="#002395"/><rect x="7" width="6" height="14" fill="#fff"/><rect x="13" width="7" height="14" fill="#ED2939"/></svg>
           FR
@@ -99,20 +107,30 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
+    <div class="hero__media">
+      <img class="hero__media-el" id="hero-media-image" src="img/hero-placeholder.svg" alt="" aria-hidden="true" />
+      <!--
+        Pour passer en vidéo : remplacer la balise <img id="hero-media-image"> ci-dessus par le bloc <video> suivant
+        (fichier compressé, silencieux, en boucle ; poster = image affichée pendant le chargement) :
+
+        <video class="hero__media-el" id="hero-media-video" autoplay muted loop playsinline poster="img/hero-placeholder.svg">
+          <source src="img/hero-video.mp4" type="video/mp4">
+        </video>
+      -->
+      <div class="hero__media-overlay"></div>
+    </div>
     <div class="hero__inner">
-      <div class="hero__badge">
-        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
-        <span data-fr="Casablanca, Maroc" data-en="Casablanca, Morocco">Casablanca, Maroc</span>
-      </div>
       <h1 class="hero__title">
         <span data-fr="Spécialiste de la radiofréquence" data-en="Specialists in radiofrequency">Spécialiste de la radiofréquence</span><br>
-        <em data-fr="et du laser en chirurgie mini-invasive" data-en="and laser minimally invasive surgery">et du laser en chirurgie mini-invasive</em>
+        <em data-fr="et du laser en chirurgie par énergie" data-en="and laser energy-based surgery">et du laser en chirurgie par énergie</em>
       </h1>
-      <p class="hero__sub" data-fr="Radiofréquence et laser pour la proctologie, la phlébologie et l'ablation tissulaire. Nous importons en direct, installons, formons vos équipes et assurons les consommables — pour les chirurgiens et les cliniques au Maroc." data-en="Radiofrequency and laser systems for proctology, phlebology and tissue ablation. We import directly, install, train your teams and supply consumables — for surgeons and clinics across Morocco.">
-        Radiofréquence et laser pour la proctologie, la phlébologie et l'ablation tissulaire. Nous importons en direct, installons, formons vos équipes et assurons les consommables — pour les chirurgiens et les cliniques au Maroc.
+      <p class="hero__sub">
+        <span data-fr="Protocoles efficace pour la proctologie, la phlébologie, l'urologie et l'ablation tissulaire" data-en="Radiofrequency and laser systems for proctology, phlebology and tissue ablation. We import directly, install, train your teams and supply consumables">Protocoles efficace pour la proctologie, la phlébologie, l'urologie et l'ablation tissulaire</span>
+        <span class="hero__sub-star" aria-hidden="true"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.35 5.36 5.85.6-4.4 3.94 1.28 5.75L10 14.9l-5.08 2.25 1.28-5.75-4.4-3.94 5.85-.6L10 1.5z"/></svg></span>
+        <span data-fr="Pour les chirurgiens et les cliniques au Maroc." data-en="for surgeons and clinics across Morocco.">Pour les chirurgiens et les cliniques au Maroc.</span>
       </p>
       <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary" data-fr="Demander une démonstration" data-en="Request a Demonstration">Demander une démonstration</a>
+        <a href="#contact" class="btn btn--primary" data-fr="Demander un devis" data-en="Request a Quote">Demander un devis</a>
         <a href="#equipements" class="btn btn--outline" data-fr="Voir les équipements" data-en="View Equipment">Voir les équipements</a>
       </div>
       <div class="hero__trust">
@@ -134,12 +152,6 @@
         </div>
       </div>
     </div>
-    <div class="hero__decoration" aria-hidden="true">
-      <div class="deco-circle deco-circle--1"></div>
-      <div class="deco-circle deco-circle--2"></div>
-      <div class="deco-cross deco-cross--1"></div>
-      <div class="deco-cross deco-cross--2"></div>
-    </div>
   </section>
 
   <!-- DOMAINES CLINIQUES -->
@@ -147,7 +159,7 @@
     <div class="container">
       <div class="section-header-block">
         <div class="section-label" data-fr="Domaines cliniques" data-en="Clinical Fields">Domaines cliniques</div>
-        <h2 data-fr="Trois spécialités, une même logique" data-en="Three specialties, one principle">Trois spécialités, une même logique</h2>
+        <h2 data-fr="Nos spécialités, une même logique" data-en="Our specialties, one principle">Nos spécialités, une même logique</h2>
         <p data-fr="Traiter la lésion par l'énergie plutôt que par l'exérèse : moins de douleur postopératoire, une récupération plus courte, un geste réalisable en ambulatoire." data-en="Treating the lesion with energy rather than excision: less postoperative pain, shorter recovery, procedures that can be performed as day surgery.">
           Traiter la lésion par l'énergie plutôt que par l'exérèse : moins de douleur postopératoire, une récupération plus courte, un geste réalisable en ambulatoire.
         </p>
@@ -177,6 +189,18 @@
             Ablation endoveineuse par radiofréquence de la grande et de la petite saphène ainsi que des perforantes. Cathéter positionné sous échoguidage, occlusion segmentaire contrôlée en température.
           </p>
           <div class="solution-card__who" data-fr="Phlébologues · chirurgiens vasculaires" data-en="Phlebologists · vascular surgeons">Phlébologues · chirurgiens vasculaires</div>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4c-3 0-4 3-3 6s4 3 3 6M16 4c3 0 4 3 3 6s-4 3-3 6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10v6M16 10v6" stroke-linecap="round"/><circle cx="12" cy="19.5" r="1.6"/></svg>
+          </div>
+          <div class="solution-card__tag" data-fr="Urologie" data-en="Urology">Urologie</div>
+          <h3 data-fr="Hypertrophie bénigne de la prostate et lithiase urinaire" data-en="Benign prostatic hyperplasia and urinary stones">Hypertrophie bénigne de la prostate et lithiase urinaire</h3>
+          <p data-fr="Fibre laser introduite par voie endoscopique pour la vaporisation ou l'énucléation du tissu prostatique, et pour la fragmentation des calculs urinaires. Geste réalisé sans incision, avec un temps de sondage réduit." data-en="Laser fibre introduced endoscopically for vaporisation or enucleation of prostatic tissue, and for fragmentation of urinary stones. Performed without incision, with reduced catheterisation time.">
+            Fibre laser introduite par voie endoscopique pour la vaporisation ou l'énucléation du tissu prostatique, et pour la fragmentation des calculs urinaires. Geste réalisé sans incision, avec un temps de sondage réduit.
+          </p>
+          <div class="solution-card__who" data-fr="Urologues" data-en="Urologists">Urologues</div>
         </article>
 
         <article class="solution-card">
@@ -220,7 +244,7 @@
           <div class="device__brandline">PIOON</div>
         </div>
         <div class="device__body">
-          <div class="device__eyebrow" data-fr="Laser chirurgical diode · Wuhan PIOON Technology, Chine" data-en="Surgical diode laser · Wuhan PIOON Technology, China">Laser chirurgical diode · Wuhan PIOON Technology, Chine</div>
+          <div class="device__eyebrow" data-fr="Laser chirurgical diode · Wuhan PIOON Technology, -" data-en="Surgical diode laser · Wuhan PIOON Technology, China">Laser chirurgical diode · Wuhan PIOON Technology, -</div>
           <h3 class="device__name">S1 PRO</h3>
           <p data-fr="Plateforme laser bi-longueur d'onde dédiée à la proctologie. La fibre est introduite au contact de la lésion et l'énergie est délivrée de façon contrôlée, sans exérèse. Le 1470 nm, fortement absorbé par l'eau, est privilégié pour l'hémorroïde et la fistule ; le 980 nm apporte la polyvalence sur les gestes de contact." data-en="Dual-wavelength laser platform dedicated to proctology. The fibre is introduced in contact with the lesion and energy is delivered in a controlled manner, without excision. The 1470 nm wavelength, strongly absorbed by water, is preferred for haemorrhoids and fistula; 980 nm adds versatility for contact procedures.">
             Plateforme laser bi-longueur d'onde dédiée à la proctologie. La fibre est introduite au contact de la lésion et l'énergie est délivrée de façon contrôlée, sans exérèse. Le 1470 nm, fortement absorbé par l'eau, est privilégié pour l'hémorroïde et la fistule ; le 980 nm apporte la polyvalence sur les gestes de contact.
@@ -245,7 +269,7 @@
           <p class="device__acc" data-fr="Accessoires disponibles : pièce à main proctologique, pièce à main chirurgicale, fibres nues et radiales, canules de 10 à 30 cm, dénudeur et coupe-fibre, lunettes de protection." data-en="Available accessories: proctology handpiece, surgical handpiece, bare and radial fibres, 10 to 30 cm cannulas, fibre stripper and cutter, safety goggles.">
             Accessoires disponibles : pièce à main proctologique, pièce à main chirurgicale, fibres nues et radiales, canules de 10 à 30 cm, dénudeur et coupe-fibre, lunettes de protection.
           </p>
-          <a href="#contact" class="device__cta" data-fr="Demander une démonstration →" data-en="Request a demonstration →">Demander une démonstration →</a>
+          <a href="#contact" class="device__cta" data-fr="En savoir plus +" data-en="Learn more +">En savoir plus +</a>
         </div>
       </article>
 
@@ -264,7 +288,7 @@
           <div class="device__brandline device__brandline--light">Curaway</div>
         </div>
         <div class="device__body">
-          <div class="device__eyebrow" data-fr="Ablation endoveineuse par radiofréquence · Zhejiang Curaway Medical, Chine" data-en="Endovenous radiofrequency ablation · Zhejiang Curaway Medical, China">Ablation endoveineuse par radiofréquence · Zhejiang Curaway Medical, Chine</div>
+          <div class="device__eyebrow" data-fr="Ablation endoveineuse par radiofréquence · Zhejiang Curaway Medical, -" data-en="Endovenous radiofrequency ablation · Zhejiang Curaway Medical, China">Ablation endoveineuse par radiofréquence · Zhejiang Curaway Medical, -</div>
           <h3 class="device__name" data-fr="Système RF endoveineux" data-en="Endovenous RF System">Système RF endoveineux</h3>
           <p data-fr="Traitement de l'insuffisance veineuse superficielle par occlusion thermique. Le cathéter est monté sous échoguidage, puis la veine est traitée par segments successifs, avec affichage en temps réel de la température et du temps de cycle." data-en="Treatment of superficial venous insufficiency by thermal occlusion. The catheter is advanced under ultrasound guidance, then the vein is treated segment by segment, with real-time display of temperature and cycle time.">
             Traitement de l'insuffisance veineuse superficielle par occlusion thermique. Le cathéter est monté sous échoguidage, puis la veine est traitée par segments successifs, avec affichage en temps réel de la température et du temps de cycle.
@@ -283,7 +307,7 @@
             <tr><th data-fr="Longueur utile" data-en="Catheter length">Longueur utile</th><td>60 cm · 100 cm</td></tr>
             <tr><th data-fr="Commande" data-en="Control">Commande</th><td data-fr="Poignée ergonomique, démarrage une touche" data-en="Ergonomic handle, one-button start">Poignée ergonomique, démarrage une touche</td></tr>
           </table>
-          <a href="#contact" class="device__cta" data-fr="Demander une démonstration →" data-en="Request a demonstration →">Demander une démonstration →</a>
+          <a href="#contact" class="device__cta" data-fr="En savoir plus +" data-en="Learn more +">En savoir plus +</a>
         </div>
       </article>
 
@@ -303,7 +327,7 @@
           <div class="device__brandline device__brandline--light">Curaway</div>
         </div>
         <div class="device__body">
-          <div class="device__eyebrow" data-fr="Radiofréquence proctologique 4 MHz · Zhejiang Curaway Medical, Chine" data-en="4 MHz proctology radiofrequency · Zhejiang Curaway Medical, China">Radiofréquence proctologique 4 MHz · Zhejiang Curaway Medical, Chine</div>
+          <div class="device__eyebrow" data-fr="Radiofréquence proctologique 4 MHz · Zhejiang Curaway Medical, -" data-en="4 MHz proctology radiofrequency · Zhejiang Curaway Medical, China">Radiofréquence proctologique 4 MHz · Zhejiang Curaway Medical, -</div>
           <h3 class="device__name" data-fr="RFA hémorroïdes &amp; fistule anale" data-en="RFA Haemorrhoid &amp; Anal Fistula">RFA hémorroïdes &amp; fistule anale</h3>
           <p data-fr="L'électrode délivre l'énergie sur la paroi interne de la lésion. La dénaturation des protéines entraîne coagulation puis atrophie du tissu ; la nécrose obtenue est stérile et laisse place à un tissu de granulation qui referme le trajet fistuleux." data-en="The electrode delivers energy to the inner wall of the lesion. Protein denaturation causes coagulation then tissue atrophy; the resulting necrosis is sterile and gives way to granulation tissue that closes the fistula tract.">
             L'électrode délivre l'énergie sur la paroi interne de la lésion. La dénaturation des protéines entraîne coagulation puis atrophie du tissu ; la nécrose obtenue est stérile et laisse place à un tissu de granulation qui referme le trajet fistuleux.
@@ -324,7 +348,7 @@
           <p class="device__acc" data-fr="Bénéfices rapportés par le fabricant : douleur et saignement postopératoires réduits, geste court, retour rapide aux activités, préservation de la fonction du coussinet hémorroïdaire, faible taux de récidive." data-en="Benefits reported by the manufacturer: reduced postoperative pain and bleeding, short procedure, fast return to normal activity, preservation of haemorrhoidal cushion function, low recurrence rate.">
             Bénéfices rapportés par le fabricant : douleur et saignement postopératoires réduits, geste court, retour rapide aux activités, préservation de la fonction du coussinet hémorroïdaire, faible taux de récidive.
           </p>
-          <a href="#contact" class="device__cta" data-fr="Demander une démonstration →" data-en="Request a demonstration →">Demander une démonstration →</a>
+          <a href="#contact" class="device__cta" data-fr="En savoir plus +" data-en="Learn more +">En savoir plus +</a>
         </div>
       </article>
 
@@ -344,7 +368,7 @@
           <div class="device__brandline">Curaway</div>
         </div>
         <div class="device__body">
-          <div class="device__eyebrow" data-fr="Générateur d'ablation par radiofréquence · Zhejiang Curaway Medical, Chine" data-en="Radiofrequency ablation generator · Zhejiang Curaway Medical, China">Générateur d'ablation par radiofréquence · Zhejiang Curaway Medical, Chine</div>
+          <div class="device__eyebrow" data-fr="Générateur d'ablation par radiofréquence · Zhejiang Curaway Medical, -" data-en="Radiofrequency ablation generator · Zhejiang Curaway Medical, China">Générateur d'ablation par radiofréquence · Zhejiang Curaway Medical, -</div>
           <h3 class="device__name">CR-S2000</h3>
           <p data-fr="Générateur multi-canal destiné à la coagulation de tissu par voie percutanée, cœlioscopique ou peropératoire. Le pilotage multi-électrodes permet une ablation conforme au volume visé, et le retour d'impédance en temps réel prévient la carbonisation." data-en="Multi-channel generator for tissue coagulation via percutaneous, laparoscopic or intraoperative routes. Multi-electrode control allows ablation conforming to the target volume, and real-time impedance feedback prevents carbonisation.">
             Générateur multi-canal destiné à la coagulation de tissu par voie percutanée, cœlioscopique ou peropératoire. Le pilotage multi-électrodes permet une ablation conforme au volume visé, et le retour d'impédance en temps réel prévient la carbonisation.
@@ -365,7 +389,7 @@
             <tr><th data-fr="Modes" data-en="Modes">Modes</th><td data-fr="Bipolaire · général · continu et test" data-en="Bipolar · general · continuous and test">Bipolaire · général · continu et test</td></tr>
             <tr><th data-fr="Options" data-en="Options">Options</th><td data-fr="Gating respiratoire, pompe de refroidissement, pédale" data-en="Respiratory gating, cooling pump, foot switch">Gating respiratoire, pompe de refroidissement, pédale</td></tr>
           </table>
-          <a href="#contact" class="device__cta" data-fr="Demander une démonstration →" data-en="Request a demonstration →">Demander une démonstration →</a>
+          <a href="#contact" class="device__cta" data-fr="En savoir plus +" data-en="Learn more +">En savoir plus +</a>
         </div>
       </article>
 
@@ -403,8 +427,8 @@
         <div class="step">
           <div class="step__num">03</div>
           <h3 data-fr="Installation &amp; formation" data-en="Installation &amp; training">Installation &amp; formation</h3>
-          <p data-fr="Mise en service sur site, réglages, et prise en main avec le chirurgien et l'équipe de bloc. La technique compte autant que la machine." data-en="On-site commissioning, settings, and hands-on training with the surgeon and theatre team. Technique matters as much as the device.">
-            Mise en service sur site, réglages, et prise en main avec le chirurgien et l'équipe de bloc. La technique compte autant que la machine.
+          <p data-fr="Mise en service sur site, réglages, et prise en main avec le chirurgien et l'équipe de bloc. La technique compte autant que la ma-." data-en="On-site commissioning, settings, and hands-on training with the surgeon and theatre team. Technique matters as much as the device.">
+            Mise en service sur site, réglages, et prise en main avec le chirurgien et l'équipe de bloc. La technique compte autant que la ma-.
           </p>
         </div>
         <div class="step">
@@ -418,18 +442,72 @@
     </div>
   </section>
 
+  <!-- TÉMOIGNAGES -->
+  <section class="section" id="temoignages">
+    <div class="container">
+      <div class="section-header-block">
+        <div class="section-label" data-fr="Témoignages" data-en="Testimonials">Témoignages</div>
+        <h2 data-fr="Ce que nos partenaires en disent" data-en="What our partners say">Ce que nos partenaires en disent</h2>
+        <p data-fr="Format d'illustration : ces témoignages sont des exemples de mise en page, à remplacer par de vrais retours de praticiens partenaires." data-en="Layout example: these testimonials are placeholder content, to be replaced with real feedback from partner practitioners.">
+          Format d'illustration : ces témoignages sont des exemples de mise en page, à remplacer par de vrais retours de praticiens partenaires.
+        </p>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <span class="testimonial-card__sample" data-fr="Témoignage à titre d'exemple" data-en="Sample testimonial">Témoignage à titre d'exemple</span>
+          <p class="testimonial-card__quote" data-fr="La formation à l'installation nous a permis d'être opérationnels dès la première semaine, avec un accompagnement clair sur le réglage des paramètres." data-en="The installation training got us operational within the first week, with clear guidance on parameter settings.">
+            La formation à l'installation nous a permis d'être opérationnels dès la première semaine, avec un accompagnement clair sur le réglage des paramètres.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">PC</div>
+            <div>
+              <div class="testimonial-card__name" data-fr="Proctologue" data-en="Proctologist">Proctologue</div>
+              <div class="testimonial-card__role" data-fr="Clinique privée · Casablanca" data-en="Private clinic · Casablanca">Clinique privée · Casablanca</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <span class="testimonial-card__sample" data-fr="Témoignage à titre d'exemple" data-en="Sample testimonial">Témoignage à titre d'exemple</span>
+          <p class="testimonial-card__quote" data-fr="Le suivi sur les consommables est réactif : nous n'avons jamais eu de rupture qui ait retardé un bloc." data-en="Consumables follow-up is responsive: we've never had a shortage delay a procedure.">
+            Le suivi sur les consommables est réactif : nous n'avons jamais eu de rupture qui ait retardé un bloc.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">CV</div>
+            <div>
+              <div class="testimonial-card__name" data-fr="Chirurgien vasculaire" data-en="Vascular surgeon">Chirurgien vasculaire</div>
+              <div class="testimonial-card__role" data-fr="Établissement de santé · Rabat" data-en="Healthcare facility · Rabat">Établissement de santé · Rabat</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <span class="testimonial-card__sample" data-fr="Témoignage à titre d'exemple" data-en="Sample testimonial">Témoignage à titre d'exemple</span>
+          <p class="testimonial-card__quote" data-fr="Interlocuteur unique du devis à la livraison : ça simplifie vraiment les démarches administratives d'importation." data-en="A single point of contact from quotation to delivery genuinely simplifies the import paperwork.">
+            Interlocuteur unique du devis à la livraison : ça simplifie vraiment les démarches administratives d'importation.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">RI</div>
+            <div>
+              <div class="testimonial-card__name" data-fr="Radiologue interventionnel" data-en="Interventional radiologist">Radiologue interventionnel</div>
+              <div class="testimonial-card__role" data-fr="Clinique privée · Marrakech" data-en="Private clinic · Marrakech">Clinique privée · Marrakech</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- SOCIÉTÉ -->
-  <section class="section" id="societe">
+  <section class="section section--alt" id="societe">
     <div class="container">
       <div class="about-grid">
         <div class="about-text">
           <div class="section-label" data-fr="La société" data-en="Company Profile">La société</div>
           <h2 data-fr="Medicaris SARL" data-en="Medicaris SARL">Medicaris SARL</h2>
-          <p data-fr="Medicaris est une société marocaine basée à Casablanca, spécialisée dans la distribution de dispositifs de chirurgie mini-invasive. Nous travaillons en relation directe avec les fabricants et nous adressons aux chirurgiens, aux cliniques et aux établissements de santé au Maroc." data-en="Medicaris is a Moroccan company based in Casablanca, specialised in the distribution of minimally invasive surgery devices. We work in direct relationship with manufacturers and serve surgeons, clinics and healthcare institutions across Morocco.">
-            Medicaris est une société marocaine basée à Casablanca, spécialisée dans la distribution de dispositifs de chirurgie mini-invasive. Nous travaillons en relation directe avec les fabricants et nous adressons aux chirurgiens, aux cliniques et aux établissements de santé au Maroc.
+          <p data-fr="Medicaris est une société marocaine basée à Casablanca, spécialisée dans la distribution de dispositifs de chirurgie par énergie. Nous travaillons en relation directe avec les fabricants et nous adressons aux chirurgiens, aux cliniques et aux établissements de santé au Maroc." data-en="Medicaris is a Moroccan company based in Casablanca, specialised in the distribution of energy-based surgery devices. We work in direct relationship with manufacturers and serve surgeons, clinics and healthcare institutions across Morocco.">
+            Medicaris est une société marocaine basée à Casablanca, spécialisée dans la distribution de dispositifs de chirurgie par énergie. Nous travaillons en relation directe avec les fabricants et nous adressons aux chirurgiens, aux cliniques et aux établissements de santé au Maroc.
           </p>
-          <p data-fr="Notre activité déclarée couvre le commerce de gros et de détail d'articles médicaux et orthopédiques, instruments de médecine et matériel de chirurgie. Notre spécialisation, elle, est délibérée : mieux vaut maîtriser trois domaines cliniques que proposer un catalogue que personne ne connaît en profondeur." data-en="Our registered activity covers wholesale and retail trade in medical and orthopedic articles, medical instruments and surgical equipment. Our specialisation, however, is deliberate: it is better to master three clinical fields than to offer a catalogue nobody knows in depth.">
-            Notre activité déclarée couvre le commerce de gros et de détail d'articles médicaux et orthopédiques, instruments de médecine et matériel de chirurgie. Notre spécialisation, elle, est délibérée : mieux vaut maîtriser trois domaines cliniques que proposer un catalogue que personne ne connaît en profondeur.
+          <p data-fr="Notre activité déclarée couvre le commerce de gros et de détail d'articles médicaux et orthopédiques, instruments de médecine et matériel de chirurgie. Notre spécialisation, elle, est délibérée : mieux vaut maîtriser un nombre restreint de domaines cliniques que proposer un catalogue que personne ne connaît en profondeur." data-en="Our registered activity covers wholesale and retail trade in medical and orthopedic articles, medical instruments and surgical equipment. Our specialisation, however, is deliberate: it is better to master a focused set of clinical fields than to offer a catalogue nobody knows in depth.">
+            Notre activité déclarée couvre le commerce de gros et de détail d'articles médicaux et orthopédiques, instruments de médecine et matériel de chirurgie. Notre spécialisation, elle, est délibérée : mieux vaut maîtriser un nombre restreint de domaines cliniques que proposer un catalogue que personne ne connaît en profondeur.
           </p>
           <div class="legal-box">
             <div class="legal-box__title" data-fr="Informations légales" data-en="Legal Information">Informations légales</div>
@@ -475,7 +553,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="stat-card__content">
-              <div class="stat-card__num">3</div>
+              <div class="stat-card__num" data-fr="Ciblés" data-en="Focused">Ciblés</div>
               <div class="stat-card__label" data-fr="Domaines cliniques couverts" data-en="Clinical fields covered">Domaines cliniques couverts</div>
             </div>
           </div>
@@ -507,6 +585,23 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTUALITÉS — APERÇU -->
+  <section class="section" id="actualites-apercu">
+    <div class="container">
+      <div class="section-header-block">
+        <div class="section-label" data-fr="Actualités" data-en="News">Actualités</div>
+        <h2 data-fr="Les dernières nouvelles de Medicaris" data-en="Latest news from Medicaris">Les dernières nouvelles de Medicaris</h2>
+        <p data-fr="Nouvelles configurations, retours d'expérience et vie de l'entreprise." data-en="New configurations, field feedback and company life.">
+          Nouvelles configurations, retours d'expérience et vie de l'entreprise.
+        </p>
+      </div>
+      <div class="news-grid" id="homeNewsGrid"></div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="actualites.html" class="btn btn--outline" data-fr="Voir toutes les actualités" data-en="View all news">Voir toutes les actualités</a>
       </div>
     </div>
   </section>
@@ -579,8 +674,8 @@
           <div class="footer-logo">
             <img src="img/logo.webp" alt="Medicaris SARL" style="height:48px;width:auto;border-radius:8px;" />
           </div>
-          <p data-fr="Distributeur de solutions de chirurgie mini-invasive — proctologie, phlébologie, ablation tissulaire. Casablanca, Maroc." data-en="Distributor of minimally invasive surgery solutions — proctology, phlebology, tissue ablation. Casablanca, Morocco.">
-            Distributeur de solutions de chirurgie mini-invasive — proctologie, phlébologie, ablation tissulaire. Casablanca, Maroc.
+          <p data-fr="Distributeur de solutions de chirurgie par énergie : proctologie, phlébologie, urologie, ablation tissulaire. Casablanca, Maroc." data-en="Distributor of energy-based surgery solutions — proctology, phlebology, urology, tissue ablation. Casablanca, Morocco.">
+            Distributeur de solutions de chirurgie par énergie : proctologie, phlébologie, urologie, ablation tissulaire. Casablanca, Maroc.
           </p>
         </div>
         <div class="footer-nav">
@@ -591,6 +686,9 @@
             <li><a href="#services"    data-fr="Nos services"       data-en="Our Services">Nos services</a></li>
             <li><a href="#societe"     data-fr="La société"         data-en="Company">La société</a></li>
             <li><a href="#contact"     data-fr="Contact"            data-en="Contact">Contact</a></li>
+            <li><a href="actualites.html" data-fr="Actualités"      data-en="News">Actualités</a></li>
+            <li><a href="congres.html"    data-fr="Congrès"         data-en="Conferences">Congrès</a></li>
+            <li><a href="faq.html"        data-fr="FAQ"             data-en="FAQ">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -619,5 +717,7 @@
   </footer>
 
   <script src="medicaris.js"></script>
+  <script src="resources-data.js"></script>
+  <script src="resources-render.js"></script>
 </body>
 </html>

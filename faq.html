@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Medicaris</title>
+  <meta name="description" content="Questions fréquentes sur les équipements, l'installation, la formation et les consommables distribués par Medicaris SARL." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://medicaris.ma/faq.html" />
+  <link rel="icon" type="image/webp" href="img/logo.webp" />
+  <link rel="apple-touch-icon" href="img/logo.webp" />
+  <meta name="theme-color" content="#0F2A4A" />
+  <meta property="og:site_name" content="Medicaris SARL" />
+  <meta property="og:locale" content="fr_MA" />
+  <meta property="og:title" content="FAQ — Medicaris" />
+  <meta property="og:description" content="Questions fréquentes sur les équipements, l'installation, la formation et les consommables." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://medicaris.ma/faq.html" />
+  <meta property="og:image" content="https://medicaris.ma/img/logo.webp" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="medicaris.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html#hero" class="nav__logo">
+        <img src="img/logo.webp" alt="Medicaris SARL" style="height:60px;width:auto;" />
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#domaines"   data-fr="Domaines cliniques" data-en="Clinical Fields">Domaines cliniques</a></li>
+        <li><a href="index.html#equipements" data-fr="Équipements"       data-en="Equipment">Équipements</a></li>
+        <li><a href="index.html#services"   data-fr="Nos services"       data-en="Our Services">Nos services</a></li>
+        <li class="nav__item--dropdown">
+          <button class="nav__dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-fr="Ressources" data-en="Resources">Ressources</button>
+          <ul class="nav__dropdown">
+            <li><a href="actualites.html" data-fr="Actualités" data-en="News">Actualités</a></li>
+            <li><a href="congres.html"    data-fr="Congrès"    data-en="Conferences">Congrès</a></li>
+            <li><a href="faq.html" aria-current="page" data-fr="FAQ" data-en="FAQ">FAQ</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#societe"    data-fr="La société"         data-en="Company">La société</a></li>
+        <li><a href="index.html#contact" class="nav__cta" data-fr="Demander un devis" data-en="Request a Quote">Demander un devis</a></li>
+      </ul>
+      <button class="lang-toggle" id="langToggle" aria-label="Passer en anglais">
+        <span class="lang-toggle__fr">
+          <svg class="lang-flag" viewBox="0 0 20 14" aria-hidden="true"><rect width="7" height="14" fill="#002395"/><rect x="7" width="6" height="14" fill="#fff"/><rect x="13" width="7" height="14" fill="#ED2939"/></svg>
+          FR
+        </span>
+        <span class="lang-toggle__sep">/</span>
+        <span class="lang-toggle__en">
+          <svg class="lang-flag" viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#012169"/><path d="M0 0l20 14M20 0L0 14" stroke="#fff" stroke-width="3"/><path d="M0 0l20 14M20 0L0 14" stroke="#C8102E" stroke-width="1.5"/><path d="M10 0v14M0 7h20" stroke="#fff" stroke-width="4"/><path d="M10 0v14M0 7h20" stroke="#C8102E" stroke-width="2.5"/></svg>
+          EN
+        </span>
+      </button>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- EN-TÊTE DE PAGE -->
+  <section class="section" style="padding-top:calc(var(--nav-h) + 56px);">
+    <div class="container" style="max-width:820px;">
+      <div class="section-header-block">
+        <div class="section-label" data-fr="FAQ" data-en="FAQ">FAQ</div>
+        <h1 data-fr="Questions fréquentes" data-en="Frequently asked questions">Questions fréquentes</h1>
+        <p data-fr="Délais, installation, formation, consommables et support technique." data-en="Lead times, installation, training, consumables and technical support.">
+          Délais, installation, formation, consommables et support technique.
+        </p>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="img/logo.webp" alt="Medicaris SARL" style="height:48px;width:auto;border-radius:8px;" />
+          </div>
+          <p data-fr="Distributeur de solutions de chirurgie par énergie : proctologie, phlébologie, urologie, ablation tissulaire. Casablanca, Maroc." data-en="Distributor of energy-based surgery solutions — proctology, phlebology, urology, tissue ablation. Casablanca, Morocco.">
+            Distributeur de solutions de chirurgie par énergie : proctologie, phlébologie, urologie, ablation tissulaire. Casablanca, Maroc.
+          </p>
+        </div>
+        <div class="footer-nav">
+          <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+          <ul>
+            <li><a href="index.html#domaines"    data-fr="Domaines cliniques" data-en="Clinical Fields">Domaines cliniques</a></li>
+            <li><a href="index.html#equipements" data-fr="Équipements"        data-en="Equipment">Équipements</a></li>
+            <li><a href="index.html#services"    data-fr="Nos services"       data-en="Our Services">Nos services</a></li>
+            <li><a href="index.html#societe"     data-fr="La société"         data-en="Company">La société</a></li>
+            <li><a href="index.html#contact"     data-fr="Contact"            data-en="Contact">Contact</a></li>
+            <li><a href="actualites.html" data-fr="Actualités"      data-en="News">Actualités</a></li>
+            <li><a href="congres.html"    data-fr="Congrès"         data-en="Conferences">Congrès</a></li>
+            <li><a href="faq.html"        data-fr="FAQ"             data-en="FAQ">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+          <p><a href="https://wa.me/212661330704" target="_blank" rel="noopener">WhatsApp · +212 661 33 07 04</a></p>
+          <p data-fr="Rue Soumaya, Rés. Shehrazade 3, 5ᵉ ét., N° 22" data-en="Rue Soumaya, Res. Shehrazade 3, 5th fl., No. 22">Rue Soumaya, Rés. Shehrazade 3, 5ᵉ ét., N° 22</p>
+          <p data-fr="Palmiers, Casablanca, Maroc" data-en="Palmiers, Casablanca, Morocco">Palmiers, Casablanca, Maroc</p>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>
+          © <span id="footerYear"></span> Medicaris SARL ·
+          <span data-fr="Société à Responsabilité Limitée au capital de 100 000 MAD" data-en="Limited Liability Company, share capital MAD 100,000">Société à Responsabilité Limitée au capital de 100 000 MAD</span> ·
+          <span data-fr="Commerce de gros et de détail d'articles médicaux et orthopédiques" data-en="Wholesale and retail trade in medical and orthopedic articles">Commerce de gros et de détail d'articles médicaux et orthopédiques</span> ·
+          Casablanca, <span data-fr="Maroc" data-en="Morocco">Maroc</span> ·
+          RC 677593 · ICE 003701741000047 · IF 66972543
+        </p>
+        <p class="footer-credit">
+          <span data-fr="Site réalisé par" data-en="Website by">Site réalisé par</span>
+          <a href="https://agencelepanaf.com" target="_blank" rel="noopener" class="footer-agency">
+            <img src="img/logomini_le_panaf.png" alt="Agence Le Panaf" class="footer-agency__logo" />
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="medicaris.js"></script>
+  <script src="resources-data.js"></script>
+  <script src="resources-render.js"></script>
+</body>
+</html>

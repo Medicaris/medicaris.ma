@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Bloque l'accès aux pages internes (équivalent des routes 404 de l'ancien vercel.json)
+RewriteRule ^brief(/.*)?$ - [R=404,L]
+RewriteRule ^presentation(/.*)?$ - [R=404,L]
+RewriteRule ^login(/.*)?$ - [R=404,L]
+RewriteRule ^presentation\.html$ - [R=404,L]
+RewriteRule ^login\.html$ - [R=404,L]
+
+# Redirige /accueil vers la page d'accueil
+RewriteRule ^accueil/?$ /index.html [L]
+
+DirectoryIndex index.html

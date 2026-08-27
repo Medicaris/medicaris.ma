@@ -25,6 +25,10 @@
     document.querySelectorAll('textarea[data-' + lang + '-placeholder]').forEach(function (el) {
       el.placeholder = el.getAttribute('data-' + lang + '-placeholder');
     });
+
+    if (langBtn) {
+      langBtn.setAttribute('aria-label', lang === 'fr' ? 'Passer en anglais' : 'Passer en français');
+    }
   }
 
   if (langBtn) {
@@ -37,6 +41,16 @@
   /* Restore saved language */
   const saved = localStorage.getItem('med-lang');
   if (saved && saved !== 'fr') setLang(saved);
+
+  /* Exposé pour les pages qui injectent du contenu dynamiquement
+     (actualités/congrès/FAQ) après le chargement initial : on
+     réapplique la langue courante une fois le DOM généré. */
+  window.medicarisApplyLang = function () {
+    setLang(html.getAttribute('data-lang') || 'fr');
+  };
+  document.addEventListener('medicaris:contentInjected', function () {
+    window.medicarisApplyLang();
+  });
 
   /* ── Navbar scroll shadow ── */
   const nav = document.getElementById('nav');
@@ -60,9 +74,33 @@
       link.addEventListener('click', function () {
         navLinks.classList.remove('is-open');
         burger.setAttribute('aria-expanded', 'false');
+        const item = link.closest('.nav__item--dropdown');
+        if (item) item.classList.remove('is-open');
       });
     });
   }
+
+  /* ── Nav dropdown "Ressources" ── */
+  document.querySelectorAll('.nav__item--dropdown').forEach(function (item) {
+    const toggle = item.querySelector('.nav__dropdown-toggle');
+    if (!toggle) return;
+
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const open = item.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav__item--dropdown.is-open').forEach(function (item) {
+      if (!item.contains(e.target)) {
+        item.classList.remove('is-open');
+        const toggle = item.querySelector('.nav__dropdown-toggle');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
 
   /* ── Footer year ── */
   const yearEl = document.getElementById('footerYear');

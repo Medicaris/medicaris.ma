@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C2544"/>
+      <stop offset="55%" stop-color="#13386A"/>
+      <stop offset="100%" stop-color="#1B4F8A"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.5">
+    <circle cx="1540" cy="260" r="420"/>
+    <circle cx="1540" cy="260" r="300"/>
+    <circle cx="1540" cy="260" r="180"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.06">
+    <rect x="220" y="760" width="64" height="16" rx="8"/>
+    <rect x="244" y="736" width="16" height="64" rx="8"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.045">
+    <rect x="1120" y="120" width="48" height="12" rx="6"/>
+    <rect x="1138" y="102" width="12" height="48" rx="6"/>
+  </g>
+</svg>
